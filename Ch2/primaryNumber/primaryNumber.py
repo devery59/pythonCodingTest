@@ -1,6 +1,6 @@
 import sys
 import math
-sys.stdin = open("in2.txt", "rt")
+sys.stdin = open("in3.txt", "rt")
 N = int(input())
 N_list = [0] * (N+1)
 cnt = 0
