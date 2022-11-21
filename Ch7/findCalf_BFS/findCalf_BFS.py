@@ -10,6 +10,7 @@ distance[N] = 0
 dQ = deque() # list로 구현하여 pop(0)을 실행하면 시간복잡도가 O(n)이 되기 때문에 이를 줄이기 위해 deque 사용
 dQ.append(N) # 출발점 추가
 while dQ:
+    print(dQ)
     now = dQ.popleft()
     if now == M:
         break

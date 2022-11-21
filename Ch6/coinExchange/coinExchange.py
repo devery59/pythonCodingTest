@@ -1,5 +1,5 @@
 import sys
-sys.stdin=open("in2.txt", "r")
+sys.stdin=open("in1.txt", "r")
 
 def DFS(L,sum):
     global num_of_coin
@@ -10,6 +10,7 @@ def DFS(L,sum):
             num_of_coin=L
     else:
         for i in range(N):
+            print(L+1,sum+N_list[i])
             DFS(L+1,sum+N_list[i])
 
 if __name__ == "__main__":
